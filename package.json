@@ -1,0 +1,34 @@
+{
+  "name": "extended-datetimepicker",
+  "version": "0.1.0",
+  "description": "Basic date time picker with ability to disable set of continuous or non-continuous date sets.",
+  "main": "js/angular-material-datetimepicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datetimepicker",
+    "calendar",
+    "angular",
+    "material",
+    "angular-material",
+    "front-end",
+    "web"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "moment": "~2.10.2",
+    "angular-material": "~1.0.6"
+  },
+  "author": "Amitt K Sharma",
+  "license": "MIT"
+}

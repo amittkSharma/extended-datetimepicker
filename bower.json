@@ -1,0 +1,31 @@
+{
+  "name": "extended-datetimepicker",
+  "description": "Basic date time picker with ability to disable set of continuous or non-continuous date sets.",
+  "version": "0.1.0",
+  "keywords": [
+    "datetimepicker",
+    "calendar",
+    "angular",
+    "material",
+    "angular-material",
+    "front-end",
+    "web"
+  ],
+  "main": [
+    "js/angular-material-datetimepicker.js",
+    "css/material-datetimepicker.css"
+  ],
+  "ignore": [
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "momentjs": "~2.10.2",
+    "angular-material": "~1.0.6"
+  }
+}

@@ -1,0 +1,77 @@
+# Angular Material DateTimePicker
+
+Originally designed for Bootstrap Material, this has been modified to work with [Angular Material](https://material.angularjs.org/). This is an Android style date-time picker for Angular Material. Some added features include:
+
+- Double click to select date or time
+- Swipe left to go to next month or Swipe right to go to previous month.
+- Disable the set of continous or non-continous date sets.
+
+
+
+## Updates
+| Date				| Author			| Description											 |
+| ----------------- | ----------------- | ----------- |
+| 2016-11-21		| AmittK		    | Extended version of angular-material-datetimepicker |
+
+
+### Dependencies
+
+Depends on the following library:
+
+- Angular Material & it's dependencies
+- Angular Touch
+- MomentJS
+
+## Installing via Bower
+
+```
+bower install angular-material-datetimepicker
+```
+
+
+## Live Example
+
+Click
+
+## Usage
+
+Add the plugin module as a dependency to your AngularJS module:
+
+```js
+    angular.module('myAwesomeModule', [
+      //other dependencies ignored
+      'ngMaterialDatePicker'
+    ]);
+```
+
+This plugin exposes a directive which should be used as an attribute for an input element. The directive is
+`mdc-datetime-picker`. An example of this is given below:
+
+```html
+    <md-input-container flex-gt-md="30">
+        <label>Timepicker Only</label>
+        <input mdc-datetime-picker date="false" time="true" type="text" id="time" short-time="true"
+               placeholder="Time"
+               min-date="minDate"
+               format="hh:mm a"
+               ng-model="time">
+    </md-input-container>
+```
+
+
+### Directive Attributes
+
+The directive accepts several attributes which are described below:
+
+| Name				| Type							| Description									|
+| ----------------- | ----------------------------- | --------------------------------------------- |
+| **ng-model**	    | (String\|Date\|Moment)		| Initial Date or model to assign the date to|
+| **format**		| String						| [MomentJS Format](momentjs.com/docs/#/parsing/string-format/),defaults to `HH:mm` for time picker only, `YYYY-MM-DD` for date picker only and `YYYY-MM-DD HH:mm` for both timepicker and date picker |
+| **short-time**	| Boolean						| true => Display 12 hours AM\|PM 				|
+| **min-date**		| (String\|Date\|Moment)		| Minimum selectable date						|
+| **max-date**		| (String\|Date\|Moment)		| Maximum selectable date						|
+| **date**			| Boolean						| true => Has Datepicker (default: true)        |
+| **time**			| Boolean						| true => Has Timepicker (default: true)		|
+| **cancel-text**	| String						| Text for the cancel button (default: Cancel)	|
+| **ok-text**		| String						| Text for the OK button (default: OK)			|
+| **disable-dates**	| Date[]                        | Dates to be disabled or not selectable by user.|
