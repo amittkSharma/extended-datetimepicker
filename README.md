@@ -31,7 +31,7 @@ bower install angular-material-datetimepicker
 
 ## Live Example
 
-Click
+Click [here] (http://rawgit.com/amittkSharma/extended-datetimepicker/master/index.html) to visualize live examples.
 
 ## Usage
 
