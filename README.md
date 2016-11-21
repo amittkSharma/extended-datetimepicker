@@ -28,6 +28,11 @@ Depends on the following library:
 bower install extended-datetimepicker
 ```
 
+## Installing via Npm
+
+```
+npm install extended-datetimepicker
+```
 
 ## Live Example
 
