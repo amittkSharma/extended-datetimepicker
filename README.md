@@ -1,6 +1,6 @@
 # Angular Material DateTimePicker
 
-Originally designed for Bootstrap Material, this has been modified to work with [Angular Material](https://material.angularjs.org/). This is an Android style date-time picker for Angular Material. Some added features include:
+An Angular Material based, an Android style date-time picker. Some basic functionalities are:
 
 - Double click to select date or time
 - Swipe left to go to next month or Swipe right to go to previous month.
@@ -25,7 +25,7 @@ Depends on the following library:
 ## Installing via Bower
 
 ```
-bower install angular-material-datetimepicker
+bower install extended-datetimepicker
 ```
 
 
