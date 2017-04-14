@@ -12,6 +12,8 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 | Date				| Author			| Description											 |
 | ----------------- | ----------------- | ----------- |
 | 2016-11-21		| AmittK		    | Extended version of angular-material-datetimepicker |
+| 2017-04-14		| AmittK		    | Changes to the display structure of date and month  |
+
 
 
 ### Dependencies
