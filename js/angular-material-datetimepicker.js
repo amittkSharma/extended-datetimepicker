@@ -29,7 +29,7 @@
     + '            </header>'
     + '            <div class="dtp-date" ng-show="picker.params.date">'
     + '                <div layout="column">'
-    + '                    <div class="dtp-actual-month">{{picker.currentDate.format("MMMM") | uppercase}}, {{picker.currentDate.format("DD")}}</div>'
+    + '                    <div class="dtp-actual-month">{{picker.currentDate.format("MMMM")}}, {{picker.currentDate.format("DD")}}</div>'
     + '                </div>'
     + '                <div layout="row">'
     + ' <div ng-click="picker.incrementYear(-1)" class="dtp-year-btn dtp-year-btn-prev" flex="30"><span ng-if="picker.isPreviousYearVisible()" >&#x25B2;</span></div>'
