@@ -13,6 +13,7 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 | ----------------- | ----------------- | ----------- |
 | 2016-11-21		| AmittK		    | Extended version of angular-material-datetimepicker |
 | 2017-04-14		| AmittK		    | Changes to the display structure of date and month  |
+| 2017-07-26		| AmittK		    | Jump to today date is introduced                    |
 
 
 

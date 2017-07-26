@@ -58,13 +58,18 @@
     + '            </div>'
     + '        </div>'
     + '    </md-dialog-content>'
-    + '    <md-dialog-actions class="dtp-buttons">'
+    + '    <md-dialog-actions class="dtp-buttons" layout="row" layout-align="center center">'
+    + '            <md-button class="dtp-btn-cancel md-icon-button" ng-click="picker.today()" ng-if="picker.currentView == picker.VIEWS.DATE">'
+    + '              <md-icon>today</md-icon></md-button>'
     + '            <md-button class="dtp-btn-cancel md-button" ng-click="picker.cancel()"> {{picker.params.cancelText}}</md-button>'
     + '            <md-button class="dtp-btn-ok md-button" ng-click="picker.ok()"> {{picker.params.okText}}</md-button>'
     + '      </md-dialog-actions>'
     + '</md-dialog>';
 
-  angular.module(moduleName, ['ngMaterial'])
+  angular.module(moduleName, ['ngAnimate','ngMaterial'])
+    .config(($mdIconProvider) => {
+      $mdIconProvider.defaultIconSet('', 24);
+    })
     .provider('mdcDatetimePickerDefaultLocale', function () {
       this.locale = 'en';
 
@@ -400,6 +405,9 @@
         }
       }
     },
+    today: function () {
+      this.selectDate(Date.now());
+    },
     ok: function () {
       switch (this.currentView) {
         case VIEW_STATES.DATE:
@@ -626,6 +634,14 @@
               calendar.isSelectedDay = function (m) {
                 return m && calendar.date.date() === m.date() && calendar.date.month() === m.month() && calendar.date.year() === m.year();
               };
+
+              calendar.isDateOfTheDay = function (m) {
+                var today = calendar.picker.options.showTodaysDate;
+                if (!today) {
+                  return false;
+                }
+                return m && today.date() === m.date() && today.month() === m.month() && today.year() === m.year();
+              }
 
             }
           ],
