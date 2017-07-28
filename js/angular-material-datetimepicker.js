@@ -94,6 +94,7 @@
             minDate: '=',
             maxDate: '=',
             disableDates: '=',
+            weekDays: '=',
             shortTime: '=',
             format: '@',
             cancelText: '@',
@@ -176,6 +177,7 @@
     this.minDate;
     this.maxDate;
     this.disableDates;
+    this.weekDays;
 
     this._attachedEvents = [];
     this.VIEWS = VIEW_STATES;
@@ -188,6 +190,7 @@
       maxDate: null,
       currentDate: null,
       disableDates: [],
+      weekDays: false,
       lang: mdcDatetimePickerDefaultLocale,
       weekStart: 0,
       shortTime: false,
@@ -252,6 +255,7 @@
         return moment(x).format('MMMM Do YYYY')
       });
       this.selectDate(this.currentDate);
+      this.weekDays = this.params.weekDays;
     },
     initDate: function (d) {
       this.currentView = VIEW_STATES.DATE;
@@ -331,6 +335,15 @@
     isInDisableDates: function (date) {
       var dut = date.format('MMMM Do YYYY')
       if(this.disableDates.indexOf(dut) > -1) {
+        return false;
+      }
+      return true;
+    },
+    isWeekDay: function(date) {
+      if (this.weekDays) {
+        if ( date.isoWeekday() <= 5) {
+          return true;
+        }
         return false;
       }
       return true;
@@ -543,7 +556,6 @@
                 }
                 days.push(i.toString());
               }
-
               calendar.week = days;
               if (!picker.maxDate && !picker.minDate) {
                 calendar.months = MONTHS;
@@ -619,6 +631,7 @@
               calendar.isInRange = function (date) {
                 return picker.isAfterMinDate(moment(date), false, false)
                   && picker.isBeforeMaxDate(moment(date), false, false)
+                  && picker.isWeekDay(moment(date))
                   && picker.isInDisableDates(moment(date));
               };
 

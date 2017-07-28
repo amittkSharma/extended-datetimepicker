@@ -9,11 +9,12 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 
 
 ## Updates
-| Date				| Author			| Description											 |
-| ----------------- | ----------------- | ----------- |
+| Date				| Author			| Description										  |
+| ----------------- | ----------------- | --------------------------------------------------- |
 | 2016-11-21		| AmittK		    | Extended version of angular-material-datetimepicker |
 | 2017-04-14		| AmittK		    | Changes to the display structure of date and month  |
 | 2017-07-26		| AmittK		    | Jump to today date is introduced                    |
+| 2017-07-28		| AmittK		    | Highlight only week-days (working business days)    |
 
 
 
@@ -82,4 +83,5 @@ The directive accepts several attributes which are described below:
 | **time**			| Boolean						| true => Has Timepicker (default: true)		|
 | **cancel-text**	| String						| Text for the cancel button (default: Cancel)	|
 | **ok-text**		| String						| Text for the OK button (default: OK)			|
-| **disable-dates**	| Date[]                        | Dates to be disabled or not selectable by user.|
+| **disable-dates**	| Date[]                        | Dates to be disabled or not selectable by user.   |
+| **week-days**	    | Boolean                        | true => Highlight only working days (default: false). |
