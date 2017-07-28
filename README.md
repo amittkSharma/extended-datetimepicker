@@ -5,6 +5,8 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 - Double click to select date or time
 - Swipe left to go to next month or Swipe right to go to previous month.
 - Disable the set of continous or non-continous date sets.
+- Jump to current day
+- Highlight Week days (Business Days)
 
 
 
