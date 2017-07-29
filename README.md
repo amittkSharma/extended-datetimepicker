@@ -7,6 +7,7 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 - Disable the set of continous or non-continous date sets.
 - Jump to current day
 - Highlight Week days (Business Days)
+- Display week number (in header)
 
 
 
@@ -17,6 +18,7 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 | 2017-04-14		| AmittK		    | Changes to the display structure of date and month  |
 | 2017-07-26		| AmittK		    | Jump to today date is introduced                    |
 | 2017-07-28		| AmittK		    | Highlight only week-days (working business days)    |
+| 2017-07-30		| AmittK		    | Displaying the week number in header, UI updated    |
 
 
 

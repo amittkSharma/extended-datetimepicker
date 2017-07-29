@@ -38,6 +38,15 @@ md-dialog.dtp {
     max-height: 500px;
 }
 
+.dtp-header {
+    background: #689F38;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    margin: auto;
+}
+
 .dtp > .dtp-content > .dtp-date-view > header.dtp-header {
     background: #689F38;
     color: #fff;
@@ -46,7 +55,7 @@ md-dialog.dtp {
 }
 
 .dtp div.dtp-date, .dtp div.dtp-time {
-    background: #8BC34A;
+    background: #689F38;
     text-align: center;
     color: #fff;
     padding: 10px;
