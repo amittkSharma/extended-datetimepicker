@@ -71,7 +71,8 @@
       $mdIconProvider.defaultIconSet('', 24);
     })
     .provider('mdcDatetimePickerDefaultLocale', function () {
-      this.locale = 'en';
+      const language = (navigator.language || navigator.userLanguage).slice(0, 2);
+      this.locale = language;
 
       this.$get = function () {
         return this.locale;
