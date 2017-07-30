@@ -56,7 +56,8 @@
     + '    </md-dialog-content>'
     + '    <md-dialog-actions class="dtp-buttons" layout="row" layout-align="space-between end">'
     + '            <md-button class="dtp-btn-cancel md-icon-button" ng-click="picker.today()" ng-if="picker.currentView == picker.VIEWS.DATE">'
-    + '              <md-icon>today</md-icon></md-button>'
+    + '             <md-tooltip md-direction="bottom"><em>Today: {{picker.todaysDate}} </em></md-tooltip>'
+    + '             <md-icon>today</md-icon></md-button>'
     + '            <md-button class="dtp-btn-cancel md-button" ng-click="picker.cancel()"> {{picker.params.cancelText}}</md-button>'
     + '            <md-button class="dtp-btn-ok md-button" ng-click="picker.ok()"> {{picker.params.okText}}</md-button>'
     + '      </md-dialog-actions>'
@@ -205,6 +206,7 @@
     init: function () {
       this.timeMode = this.params.time && !this.params.date;
       this.dateMode = this.params.date;
+      this.todaysDate = moment(Date.now()).format("YYYY-MM-DD");
       this.initDates();
       this.start();
     },
