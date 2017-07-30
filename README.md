@@ -19,6 +19,7 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 | 2017-07-26		| AmittK		    | Jump to today date is introduced                    |
 | 2017-07-28		| AmittK		    | Highlight only week-days (working business days)    |
 | 2017-07-30		| AmittK		    | Displaying the week number in header, UI updated    |
+| 2017-07-30    	| AmittK		    | UI updated with icons and tooltips                  |
 
 
 
