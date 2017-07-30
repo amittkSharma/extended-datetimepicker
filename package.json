@@ -15,7 +15,10 @@
     "angular-material",
     "front-end",
     "web",
-    "momentjs"
+    "momentjs",
+    "angular datetimepicker",
+    "angular datetime picker",
+    "angular calendar"
   ],
   "ignore": [
     "/.*",
