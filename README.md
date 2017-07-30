@@ -8,6 +8,7 @@ An Angular Material based, an Android style date-time picker. Some basic functio
 - Jump to current day
 - Highlight Week days (Business Days)
 - Display week number (in header)
+- Weekdays as per browser language
 
 
 
