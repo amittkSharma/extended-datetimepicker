@@ -157,7 +157,8 @@
                   bindToController: true,
                   disableParentScroll: false,
                   skipHide: true,
-                  clickOutsideToClose:true
+                  clickOutsideToClose:true,
+                  multiple:true
                 })
                 .then(function (v) {
                   scope.currentDate = v ? v._d : v;
