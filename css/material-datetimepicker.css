@@ -216,6 +216,7 @@ md-dialog.dtp {
 .dtp .dtp-actual-meridien a.selected {
     background: #689F38;
     color: #fff;
+    padding-left: 12px;
 }
 
 .dtp .dtp-picker-time > a {
@@ -228,7 +229,7 @@ md-dialog.dtp {
     position: absolute;
     width: 30px;
     height: 30px;
-    font-size: 1.1em;
+    font-size: 1em;
     border-radius: 50%;
     cursor: pointer;
     text-align: center !important;
@@ -237,6 +238,7 @@ md-dialog.dtp {
 .dtp .dtp-picker-time > a.dtp-select-hour.selected {
     background: #689F38;
     color: #fff;
+    padding-left: 7.2px
 }
 
 .dtp .dtp-picker-time > a.dtp-select-hour.disabled, .dtp .dtp-picker-time > a.dtp-select-minute.disabled {
