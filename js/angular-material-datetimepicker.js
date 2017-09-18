@@ -67,11 +67,11 @@
     + '</md-dialog>';
 
   angular.module(moduleName, ['ngAnimate','ngMaterial'])
-    .config(($mdIconProvider) => {
+    .config(function($mdIconProvider) {
       $mdIconProvider.defaultIconSet('', 24);
     })
     .provider('mdcDatetimePickerDefaultLocale', function () {
-      const language = (navigator.language || navigator.userLanguage).slice(0, 2);
+      var language = (navigator.language || navigator.userLanguage).slice(0, 2);
       this.locale = language;
 
       this.$get = function () {
