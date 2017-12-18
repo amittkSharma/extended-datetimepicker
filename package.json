@@ -1,6 +1,6 @@
 {
   "name": "extended-datetimepicker",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Basic date time picker with ability to disable set of continuous or non-continuous date sets.",
   "homepage": "http://rawgit.com/amittkSharma/extended-datetimepicker/master/index.html",
   "main": "js/angular-material-datetimepicker.js",
@@ -31,8 +31,8 @@
     "test-infra"
   ],
   "dependencies": {
-    "moment": "~2.10.2",
-    "angular-material": "1.1.4"
+    "moment": "2.20.0",
+    "angular-material": "1.1.5"
   },
   "repository": {
     "type": "git",
