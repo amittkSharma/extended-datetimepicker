@@ -1,5 +1,8 @@
 # Angular Material DateTimePicker
 
+[![](https://img.shields.io/npm/v/extended-datetimepicker.svg)](https://www.npmjs.com/package/extended-datetimepicker)
+[![](https://img.shields.io/npm/dm/extended-datetimepicker.svg)](https://www.npmjs.com/package/extended-datetimepicker)
+
 An Angular Material based, an Android style date-time picker. Some basic functionalities are:
 
 - Double click to select date or time
